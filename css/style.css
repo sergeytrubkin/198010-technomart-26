@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 17px;
+	line-height: 24px;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	background-color: #f4f7f9;
+}
+
+.visually-hidden {
+	display: none;
+}
+
+.header-top {
+	background-color: #293449;
+}
+
+.wrapper {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 220px;
+	height: 42px;
+
+	background-color: #ee3643;
+}
+
+.header-top__list {
+	list-style: none;
+}
+
+.header-top__link {
+	color: #fff;
+}

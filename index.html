@@ -3,21 +3,29 @@
 <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <!-- header-top -->
-        <h1 class="visually-hidden">Техномарт</h1>
-        <a><img src="./img/logo-technomart.svg" width="220" height="47" alt="Логотип"></a>
-        <ul>
-            <li>Поиск</li>
-            <li><a href="#">Закладки: 0</a></li>
-            <li><a href="#">Корзина: 0</a></li>
-        </ul>
-        <ul>
-            <li><a href="#">Оформить заказ</a></li>
-        </ul>
+        <div class="header-top">
+            <div class="wrapper">
+                <h1 class="visually-hidden">Техномарт</h1>
+                <a class="logo"><img src="./img/logo-technomart.svg" width="109" height="17" alt="Логотип"></a>
+                <form action="http://echo.htmlacademy.ru" method="post">
+                   <input type="text" placeholder="Поиск"> 
+                   <button type="submit">Найти</button>
+                </form>
+                
+                <ul class="header-top__list">
+                    <li class="header-top__item"><a class="header-top__link" href="#">Закладки: 0</a></li>
+                    <li class="header-top__item"><a class="header-top__link" href="#">Корзина: 0</a></li>
+                    <li class="header-top__item"><a class="header-top__link" href="#">Оформить заказ</a></li>
+                </ul>
+            </div>
+        </div>
         <!-- end header-top -->
 
         <!-- description, contacts, sign-up -->
