@@ -33,12 +33,28 @@ header {
 .logo {
 	width: 220px;
 	height: 42px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
 
 	background-color: #ee3643;
 }
 
+.header-top__form {
+	display: inline-block;
+}
+
 .header-top__list {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
 	list-style: none;
+}
+
+.header-top__item {
+	display: inline-block;
+	padding: 10px 0;
 }
 
 .header-top__link {
