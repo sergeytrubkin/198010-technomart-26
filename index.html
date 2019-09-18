@@ -17,61 +17,66 @@
                 <form class="form header-top__form" action="http://echo.htmlacademy.ru" method="post">
                    <input id="search" type="text" name="search" placeholder="Поиск"> 
                    <label for="search">Поиск</label>
-                </form>
-                
-                <ul class="header-top__list">
-                    <li class="header-top__item"><a class="header-top__link" href="#">Закладки: 0</a></li>
-                    <li class="header-top__item"><a class="header-top__link" href="#">Корзина: 0</a></li>
-                    <li class="header-top__item"><a class="header-top__link" href="#">Оформить заказ</a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- end header-top -->
+               </form>
 
-        <!-- description, contacts, sign-up -->
-        <section>
+               <ul class="header-top__list">
+                <li class="header-top__item"><a class="header-top__link" href="#">Закладки: 0</a></li>
+                <li class="header-top__item"><a class="header-top__link" href="#">Корзина: 0</a></li>
+                <li class="header-top__item header-top__item--order"><a class="header-top__link" href="#">Оформить заказ</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end header-top -->
+
+    <!-- description, contacts, sign-up -->
+    <div class="header-middle wrapper">
+        <section class="description">
             <h3 class="visually-hidden">Краткая информация</h3>
-            <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+            <p class="description__text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
         </section>
-        <section>
+        <section class="contacts">
             <h3 class="visually-hidden">Контактные данные</h3>
-            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-            <p>г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
+            <a class="contacts__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <p class="contacts__address">г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
         </section>
-        <section>
+        <section class="sign-up">
             <h3 class="visually-hidden">Меню входа</h3>
 
-            <a href="#">Войти</a>
-            <a href="#">Регистрация</a>
-        </section>
+            <a class="sign-up__enter" href="#">Войти</a>
+            <a class="sign-up__registration" href="#">Регистрация</a>
+        </section></div>
+        
         <!-- end description, contacts, sign-up -->
 
         <!-- navigation menu -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Главная</a>
-                </li>
-                <li>
-                    <a href="#">Компания</a>
-                </li>
-                <li>
-                    <a href="catalog.html">Каталог</a>
-                </li>
-                <li>
-                    <a href="#">Новости</a>
-                </li>
-                <li>
-                    <a href="#">Спецпредложения</a>
-                </li>
-                <li>
-                    <a href="#">Доставка</a>
-                </li>
-                <li>
-                    <a href="#">Контакты</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="wrapper">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Главная</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Компания</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Новости</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Спецпредложения</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Доставка</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
         <!-- end navigation menu -->
 
     </header>
