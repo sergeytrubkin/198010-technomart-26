@@ -302,7 +302,7 @@ header {
 	color: #fff;
 }
 
-.footer__nav ul:nth-child(2) a {
+.footer__list:last-child a {
 	color: #ffda96;
 }
 /*		end footer__top		*/
