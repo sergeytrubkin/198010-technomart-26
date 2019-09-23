@@ -68,7 +68,6 @@ header {
 	position: relative;
 	width: 220px;
 	height: 42px;
-	margin-right: 10px;
 	padding-bottom: 10px;
 	padding-top: 13px;
 	padding-left: 56px;
@@ -108,10 +107,65 @@ header {
 	background-color: #8e1e26;
 }
 
+/*		header-top__form		*/
 .header-top__form {
-	display: inline-block;
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	height: 42px;
 }
 
+.header-top__form:hover {
+	background-color: #212a3a;
+}
+
+.header-top__form input {
+	width: 100%;
+  padding-right: 10px;
+	padding-left: 48px;
+	padding-top: 12px;
+  padding-bottom: 11px;
+	background-color: inherit;
+	border: none;
+	color: #fff;
+}
+
+.header-top__form input:focus {
+	outline: none;
+	background-color: #fff;
+	color: #000000;
+}
+
+
+
+.header-top__form input::placeholder {
+	color: #fff;
+}
+
+.header-top__form label {
+	font-size: 0;
+}
+
+.header-top__form label::before {
+	content: "";
+	position: absolute;
+	left: 17px;
+	top: 50%;
+	width: 16px;
+	height: 16px;
+	margin-top: -9px;
+
+	background-image: url(../img/icon-search.svg);
+	opacity: 0.3;
+}
+
+.header-top__form:hover label::before {
+	opacity: 1;
+}
+/*		end header-top__form		*/
+
+/*		header-top__list		*/
 .header-top__list {
 	display: inline-block;
 	margin: 0;
@@ -134,6 +188,7 @@ header {
 .header-top__link {
 	color: #fff;
 }
+/*		end header-top__list		*/
 /*		end header-top		*/
 
 /*		header-middle  	*/
