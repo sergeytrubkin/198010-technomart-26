@@ -131,7 +131,8 @@ header {
 	color: #fff;
 }
 
-.header-top__form input:hover {
+.header-top__form input:hover,
+.header-top__form input:focus {
 	background-image: url(../img/icon-search.svg);
 	background-repeat: no-repeat;
 	background-position: 17px 12px;
@@ -225,13 +226,12 @@ header {
 	background-image: url(../img/cart-icon.svg);
 }
 
-.header-top__link:hover {
+.header-top__link:hover,
+.header-top__link:focus {
 	background-color: #212a3a;
 }
 
-
-
-.header-top__item:hover a::before {
+.header-top__item a:hover::before {
 	opacity: 1;
 }
 
@@ -239,7 +239,7 @@ header {
 	color: rgba(255, 255, 255, 0.5);
 }
 
-.header-top__item:active a::before {
+.header-top__item a:active::before {
 	opacity: 0.5;
 }
 
@@ -247,11 +247,12 @@ header {
 	background-color: #ee3643;
 }
 
-.header-top__item--cart:hover a{
+.header-top__item--cart a:hover,
+.header-top__item--cart	a:focus{
 	background-color: #fe3c49;
 }
 
-.header-top__item--cart:active a {
+.header-top__item--cart a:active {
 	background-color: #e61b29;
 }
 
@@ -259,14 +260,14 @@ header {
 	background-color: #63a63e;
 }
 
-.header-top__item--order:hover a{
+.header-top__item--order a:hover,
+.header-top__item--order a:focus {
 	background-color: #5fbb2d;
 }
 
-.header-top__item--order:active a{
+.header-top__item--order a:active {
 	background-color: #518534;
 }
-
 /*		end header-top__list		*/
 /*		end header-top		*/
 
