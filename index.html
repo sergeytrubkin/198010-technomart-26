@@ -42,140 +42,149 @@
 			<section class="user-menu">
 				<h3 class="visually-hidden">Меню входа</h3>
 
-				<a class="user-menu__enter" href="#">Войти</a>
-				<a class="user-menu__registration" href="#">Регистрация</a>
-			</section>
-		</div>
+				<a class="user-menu__enter" href="#">Войти
+					<svg version="1.1" id="Layer_1" fill="#c5c5c5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
+					<g>
+						<polygon points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 	"/>
+					</g>
+					<path d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027
+					v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z"/>
+				</svg>
+			</a>
+			<a class="user-menu__registration" href="#">Регистрация</a>
+		</section>
+	</div>
 
-		<!-- end description, contacts, user-menu -->
+	<!-- end description, contacts, user-menu -->
 
-		<!-- navigation menu -->
+	<!-- navigation menu -->
+	<div class="wrapper">
+		<nav class="navigation">
+			<ul class="navigation__list">
+				<li class="navigation__item">
+					<a class="navigation__link" href="#">Главная</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="#">Компания</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="catalog.html">Каталог</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="#">Новости</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="#">Спецпредложения</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="#">Доставка</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="#">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<!-- end navigation menu -->
+
+</header>
+
+<main>
+	<!-- main content -->
+
+	<!-- end main content -->
+	<!-- info-block -->
+	<div class="wrapper info-block">
+		<!-- features -->
+		<section class="features">
+			<h2 class="features__title">Компания «Техномарт»</h2>
+			<p class="features__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+			<p class="features__text">Мы можем доставить ваш товар в самые отдаленные точки России!
+			Техномарт работает со многими транспортными компаниями:</p>
+			<ul class="features__list">
+				<li class="features__item">Деловые линии</li>
+				<li class="features__item">Автотрейдинг</li>
+				<li class="features__item">ЖелДорЭкспедиция</li>
+			</ul>
+			<a class="button" href="#">Подробнее о компании</a>
+		</section>
+		<!--  end features -->
+
+		<!--  contacts  -->
+		<section class="contacts">
+			<h2>Контакты</h2>
+			<p>Вы можете забрать товар сами, заехав в наш офис:</p>
+			<a href="https://yandex.ru/maps"><img src="./img/map.jpg" width="300" height="158" alt="карта"></a>
+			<button class="visually-hidden" type="button">Закрыть</button>
+			<a class="button" href="#">Заблудились? напишите нам!</a>
+			<form action="http://echo.htmlacademy.ru" method="post">
+				<label for="name">Ваше имя:</label>
+				<input id ="name" type="text" name="name" placeholder="Имя Фамилия">
+
+				<label for="email">Ваш e-mail:</label>
+				<input id ="email" type="email" name="email" placeholder="email@example.com">
+
+				<label for="text">Текст письма:</label>
+				<textarea id="text" name="text"  cols="30" rows="10"></textarea>
+				<button type="submit">Отправить</button>
+			</form>
+			<button type="button">Закрыть</button>
+		</section>
+		<!--  end contacts -->
+	</div>
+	<!-- end info-block -->
+</main>
+
+<footer class="footer">
+	<section class="footer__top">
 		<div class="wrapper">
-			<nav class="navigation">
-				<ul class="navigation__list">
-					<li class="navigation__item">
-						<a class="navigation__link" href="#">Главная</a>
-					</li>
-					<li class="navigation__item">
-						<a class="navigation__link" href="#">Компания</a>
-					</li>
-					<li class="navigation__item">
-						<a class="navigation__link" href="catalog.html">Каталог</a>
-					</li>
-					<li class="navigation__item">
-						<a class="navigation__link" href="#">Новости</a>
-					</li>
-					<li class="navigation__item">
-						<a class="navigation__link" href="#">Спецпредложения</a>
-					</li>
-					<li class="navigation__item">
-						<a class="navigation__link" href="#">Доставка</a>
-					</li>
-					<li class="navigation__item">
-						<a class="navigation__link" href="#">Контакты</a>
-					</li>
+			<div class="footer__info">
+				<h3 class="visually-hidden">Основная информация</h3>
+				<a class="logo" href="#"><img src="./img/logo-technomart.svg" width="220" height="68" alt="Логотип"></a>
+				<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				<a href="tel:+78125550555">+7 (812) 555-05-55</a>
+			</div>
+			<div class="footer__nav">
+				<ul class="footer__list">
+					<li><a href="#">Компания</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Контакты</a></li>
 				</ul>
-			</nav>
+				<ul class="footer__list">
+					<li><a href="#">Материалы</a></li>
+					<li><a href="#">Техника</a></li>
+					<li><a href="#">Инструмент</a></li>
+					<li><a href="#">Спецпредложения</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="footer__bottom">
+		<div class="wrapper">
+			<h3 class="visually-hidden">Данные для связи</h3>
+			<p>© 2010–2019 Компания «Техномарт»
+			Все права защищены</p>
+			<div>
+				<a href="#">VK</a>
+				<a href="#">facebook</a>
+				<a href="#">instagram</a>
+			</div>
+			<div>
+				<p>Обратная связь:</p>
+				<a href="#">mail@htmlacademy.ru</a>
+			</div>
+			<div>
+				<p>Разработано —</p>
+				<a href="#">htmlacademy.ru</a>
+			</div>
 		</div>
 
-		<!-- end navigation menu -->
-
-	</header>
-
-	<main>
-		<!-- main content -->
-
-		<!-- end main content -->
-		<!-- info-block -->
-		<div class="wrapper info-block">
-			<!-- features -->
-			<section class="features">
-				<h2 class="features__title">Компания «Техномарт»</h2>
-				<p class="features__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-				<p class="features__text">Мы можем доставить ваш товар в самые отдаленные точки России!
-				Техномарт работает со многими транспортными компаниями:</p>
-				<ul class="features__list">
-					<li class="features__item">Деловые линии</li>
-					<li class="features__item">Автотрейдинг</li>
-					<li class="features__item">ЖелДорЭкспедиция</li>
-				</ul>
-				<a class="button" href="#">Подробнее о компании</a>
-			</section>
-			<!--  end features -->
-
-			<!--  contacts  -->
-			<section class="contacts">
-				<h2>Контакты</h2>
-				<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-				<a href="https://yandex.ru/maps"><img src="./img/map.jpg" width="300" height="158" alt="карта"></a>
-				<button class="visually-hidden" type="button">Закрыть</button>
-				<a class="button" href="#">Заблудились? напишите нам!</a>
-				<form action="http://echo.htmlacademy.ru" method="post">
-					<label for="name">Ваше имя:</label>
-					<input id ="name" type="text" name="name" placeholder="Имя Фамилия">
-
-					<label for="email">Ваш e-mail:</label>
-					<input id ="email" type="email" name="email" placeholder="email@example.com">
-
-					<label for="text">Текст письма:</label>
-					<textarea id="text" name="text"  cols="30" rows="10"></textarea>
-					<button type="submit">Отправить</button>
-				</form>
-				<button type="button">Закрыть</button>
-			</section>
-			<!--  end contacts -->
-		</div>
-		<!-- end info-block -->
-	</main>
-
-	<footer class="footer">
-		<section class="footer__top">
-			<div class="wrapper">
-				<div class="footer__info">
-					<h3 class="visually-hidden">Основная информация</h3>
-					<a class="logo" href="#"><img src="./img/logo-technomart.svg" width="220" height="68" alt="Логотип"></a>
-					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-					<a href="tel:+78125550555">+7 (812) 555-05-55</a>
-				</div>
-				<div class="footer__nav">
-					<ul class="footer__list">
-						<li><a href="#">Компания</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="#">Каталог</a></li>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-					<ul class="footer__list">
-						<li><a href="#">Материалы</a></li>
-						<li><a href="#">Техника</a></li>
-						<li><a href="#">Инструмент</a></li>
-						<li><a href="#">Спецпредложения</a></li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
-		<section class="footer__bottom">
-			<div class="wrapper">
-				<h3 class="visually-hidden">Данные для связи</h3>
-				<p>© 2010–2019 Компания «Техномарт»
-				Все права защищены</p>
-				<div>
-					<a href="#">VK</a>
-					<a href="#">facebook</a>
-					<a href="#">instagram</a>
-				</div>
-				<div>
-					<p>Обратная связь:</p>
-					<a href="#">mail@htmlacademy.ru</a>
-				</div>
-				<div>
-					<p>Разработано —</p>
-					<a href="#">htmlacademy.ru</a>
-				</div>
-			</div>
-
-		</section>
-	</footer>
+	</section>
+</footer>
 </body>
 </html>
