@@ -69,11 +69,21 @@ ul {
 }
 
 .button {
+	display: inline-block;
+	padding: 0 10px;
+	padding-top: 8px;
+	padding-bottom: 6px;
+
+	text-align: center;
 	text-transform: uppercase;
 	color: #fff;
 	font-size: 14px;
+	vertical-align: top;
+
 	background-color: #ee3643;
+
 	border: none;
+	border-radius: 2px;
 }
 
 header {
@@ -651,20 +661,115 @@ input[type="radio"].visually-hidden {
 /*		main		*/
 
 /*		info-block		*/
+.info-block {
+	display: flex;
+	align-items: stretch;
+	padding-top: 54px;
+	padding-bottom: 86px;
+}
 .info-block h2{
+	margin-bottom: 26px;
 	text-transform: uppercase;
 	font-size: 30px;
 	line-height: 30px;
+	letter-spacing: -0.8px;
 }
 
 .info-block p {
+	margin: 0;
 	font-size: 13px;
 	font-family: 'PT Sans';
 }
 
-.info-block li {
+.features {
+	display: flex;
+	flex-direction: column;
+	width: 620px;
+	margin-right: 20px;
+}
+
+.features__list {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 36px;
+}
+
+.features__item {
+	margin-bottom: 24px;
+}
+
+.features__item:nth-child(2) {
+	margin-bottom: 0;
+}
+
+.features__item:nth-child(2) p{
+	padding-right: 200px;
+	margin-bottom: 21px;
+}
+
+.features__text {
+	padding-right: 60px;
+	letter-spacing: 0.1px;
+}
+
+.features__inner-list {
+	margin-bottom: 0;
+}
+
+.features__inner-item {
+	position: relative;
+	margin-bottom: 20px;
+	padding-left: 37px;
 	font-size: 18px;
 	line-height: 20px;
+}
+
+.features__inner-item:last-child {
+	margin-bottom: 0;
+}
+
+.features__inner-item::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 25px;
+	height: 2px;
+	background-color: #ee3643;
+	transform: translateY(-50%);
+}
+
+.features__btn {
+	width: 220px;
+	margin-top: auto;
+	padding-left: 12px;
+}
+
+.map {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+}
+
+/*.map h2 {
+	margin-bottom: 13px;
+}
+*/
+.map p {
+	margin: 0;
+	padding-right: 100px;
+	margin-bottom: 31px;
+}
+
+.map__block {
+	margin-bottom: 33px;
+}
+
+.map__btn {
+	width: 100%;
+	text-align: center;
+	padding-left: 16px;
+	margin-top: auto;
 }
 /*		end info-block		*/
 
