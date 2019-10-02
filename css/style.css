@@ -931,6 +931,10 @@ header {
 	opacity: 1;
 }
 
+.catalog-filter input:checked:hover + label::before {
+	opacity: 1;
+}
+
 .catalog-filter input:disabled + label {
 	color: rgba(0, 0, 0, 0.4);
 }
