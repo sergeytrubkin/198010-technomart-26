@@ -593,8 +593,6 @@ header {
 	width: 100%;
 	padding-top: 17px;
 	padding-bottom: 19px;
-	padding-left: 10px;
-	padding-right: 10px;
 	background-color: #32425c;
 	color: #fff;
 	flex-grow: 1;
@@ -612,38 +610,11 @@ header {
 }
 
 .navigation__item:first-child a {
-	padding-left: 51px;
-	padding-right: 33px;
-}
-
-.navigation__item:nth-child(2) a {
-	padding-left: 30px;
-	padding-right: 30px;
-}
-
-.navigation__item:nth-child(3) a {
-	padding-left: 29px;
-	padding-right: 35px;
-}
-
-.navigation__item:nth-child(4) a {
-	padding-left: 26px;
-	padding-right: 33px;
-}
-
-.navigation__item:nth-child(5) a {
-	padding-left: 26px;
-	padding-right: 37px;
-}
-
-.navigation__item:nth-child(6) a {
-	padding-left: 25px;
-	padding-right: 35px;
+	padding-left: 22px;
 }
 
 .navigation__item:last-child a {
-	padding-left: 28px;
-	padding-right: 54px;
+	padding-right: 25px;;
 }
 
 .navigation__link:hover,
