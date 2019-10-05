@@ -45,6 +45,7 @@ html {
 }
 
 body {
+	min-width: 960px;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -86,6 +87,15 @@ ul {
 	border-radius: 2px;
 }
 
+.button:hover,
+.button:focus {
+	background-color: #ca2c37;
+}
+
+.button:active {
+	background-color: #ba2732;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -115,8 +125,9 @@ header {
 	background-color: #293449;
 }
 
-.wrapper {
-	width: 940px;
+.container {
+	width: 960px;
+	padding: 0 10px;
 	margin: 0 auto;
 }
 
