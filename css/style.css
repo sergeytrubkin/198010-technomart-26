@@ -968,10 +968,12 @@ header {
 .catalog-filter__button:hover,
 .catalog-filter__button:focus {
 	outline: none;
+	background-color: #fff;
 	border-color: #bdc6ca;
 }
 
 .catalog-filter__button:active {
+	background-color: #fff;
 	border-color: #ee3744;
 }
 /*		end catalog-filter		*/
