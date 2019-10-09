@@ -125,7 +125,25 @@
 
 			<!-- catalog-filter  -->
 			<div class="catalog-filter">
+				<h3 class="catalog-filter__title">Фильтр:</h3>
 				<form action="http://echo.htmlacademy.ru" method="post">
+
+
+					<fieldset class="catalog-filter__cost">
+						<legend>Цена:</legend>
+						<div class="catalog-filter__range-controls">
+							<div class="scale">
+								<div class="bar"></div>
+								<div class="catalog-filter__range-toggle catalog-filter__range-toggle--min"></div>
+								<div class="catalog-filter__range-toggle catalog-filter__range-toggle--max"></div>
+							</div>
+						</div>
+						<div class="catalog-filter__price-controls">
+							<label class="catalog-filter__min-price"><input type="text" name="min-price" value="0"></label>
+							<label class="catalog-filter__max-price"><input type="text" name="max-price" value="30000"></label>
+						</div>
+					</fieldset>
+
 					<fieldset>
 						<legend>Производители:</legend>
 						<input class="visually-hidden" id="bosch" type="checkbox" name="bosch" checked>
@@ -160,6 +178,22 @@
 
 			<!-- catalog-items -->
 			<div class="catalog-items">
+				<div class="catalog-sort">
+					<p class="catalog-sort__title">Сортировка:</p>
+					<ul class="catalog-sort__list">
+						<a href="#" class="catalog-sort__link">По цене</a>
+					</ul>
+					<ul class="catalog-sort__list">
+						<a href="#" class="catalog-sort__link">По типу</a>
+					</ul>
+					<ul class="catalog-sort__list">
+						<a href="#" class="catalog-sort__link">По функционалу</a>
+					</ul>
+					<div class="catalog-sort__arrow-block">
+						<a href="#" class="catalog-sort__arrow">По возрастанию</a>
+						<a href="#" class="catalog-sort__arrow">По убыванию</a>
+					</div>
+				</div>
 				<ul class="catalog-items__list">
 					<li class="catalog-items__item">
 						<img src="./img/Bosch-3000.jpg" width="218" height="170" alt="Bosch BFG 3000">
@@ -284,17 +318,32 @@
 						<span class="catalog-items__new visually-hidden">new</span>
 					</li>
 				</ul>
+				<div class="pagination">
+					<ul class="pagination__list">
+						<li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
+						<li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+						<li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+						<li class="pagination__item"><a href="#" class="pagination__link">Следующая</a></li>
+					</ul>
+				</div>
 			</div>
 			<!-- end catalog items -->
 		</div>
 		<!-- end catalog -->
 
-		<!-- popup -->
-		<p>Товар добавлен в корзину</p>
-		<a href="#">Оформить заказ</a>
-		<a href="#">Продолжить покупки</a>
-		<button type="button">Закрыть</button>
-		<!-- end popup -->
+		<!-- 		description-item		 -->
+		<section class="description-item">
+			<div class="container">
+				<h2 class="description-item__title">Пара слов о перфораторах</h2>
+				<p class="description-item__text">
+					Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+					<br>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В 
+					ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+				</p>
+			</div>
+		</section>
+		<!-- 		end description-item		 -->
+
 		<!-- end main content -->
 	</div>
 </main>
@@ -353,8 +402,18 @@
 					</div>
 				</div>
 			</div>
-
 		</section>
 	</footer>
+
+	<!-- popup -->
+	<div class="popup">
+		<div class="popup__added-cart">
+			<p>Товар добавлен в корзину</p>
+			<a href="#">Оформить заказ</a>
+			<a href="#">Продолжить покупки</a>
+			<button type="button">Закрыть</button>
+		</div>
+	</div>
+	<!-- end popups -->
 </body>
 </html>

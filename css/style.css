@@ -844,6 +844,17 @@ header {
 	font-family: 'PT Sans';
 }
 
+.catalog-filter__title {
+	width: 100%;
+	padding: 10px 20px;
+	background-color: #f7f3ec;
+
+	font-size: 13px;
+	text-transform: uppercase;
+
+	border-radius: 3px;
+}
+
 .catalog-filter fieldset {
 	display: flex;
 	padding: 0;
@@ -875,6 +886,104 @@ header {
 	text-transform: uppercase;
 	font-size: 15px;
 	line-height: 20px;
+}
+
+/*		catalog-filter__cost		*/
+.catalog-filter-cost {
+	display: flex;
+	flex-direction: column;
+}
+
+.catalog-filter__range-controls {
+	margin-bottom: 32px;
+	padding: 39px 20px;
+	width: 100%;
+
+	border-radius: 3px;
+
+	background-color: #f7f3ec;
+}
+
+.catalog-filter__range-controls .scale {
+	position: relative;
+	height: 2px;
+	background: #d7dcde;
+}
+
+.catalog-filter__range-controls .bar {
+	width: 80%;
+	height: 2px;
+	background: #00ca74;
+}
+
+.catalog-filter__range-toggle {
+	position: absolute;
+	top: -9px;
+	width: 20px;
+	height: 20px;
+	background-color: #bababa;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+}
+
+.catalog-filter__range-toggle:hover {
+	background-color: #666666;
+	box-shadow: 0 3px 1px 0 rgba(0, 1, 1, 0.2);
+}
+
+.catalog-filter__range-toggle:active {
+	background-color: #666666;
+	box-shadow: 0 0px 1px 0 rgba(0, 1, 1, 0.2);
+}
+
+.catalog-filter__range-toggle--min {
+	left: 0;
+}
+
+.catalog-filter__range-toggle--max {
+	left: 80%;
+}
+
+.catalog-filter__price-controls {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	height: 33px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.catalog-filter__price-controls::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 10px;
+	height: 1px;
+	background: #444444;
+	transform: translate(-50%, -50%);
+}
+
+.catalog-filter__price-controls label {
+	display: flex;
+	width: 95px;
+	padding: 0;
+	margin: 0;
+}
+/*		end catalog-filter__cost		*/
+
+.catalog-filter__price-controls input {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+
+	text-align: center;
+
+	background-color: #f7f3ec;
+	border-radius: 3px;
+	border: none;
 }
 
 .catalog-filter input[type="checkbox"] + label::before {
