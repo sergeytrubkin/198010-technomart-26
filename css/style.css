@@ -810,6 +810,9 @@ header {
 	font-size: 0;
 	vertical-align: top;
 
+	background-color: transparent;
+	border: none;
+
 	transform: translateY(-50%);
 
 	outline: none;
@@ -862,6 +865,7 @@ header {
 	width: 10px;
 	height: 10px;
 	margin-right: 6px;
+	padding: 0;
 
 	background-color: #fff;
 	border: 2px solid #fff;
