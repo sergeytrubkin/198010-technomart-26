@@ -274,17 +274,41 @@
 			<h2 class="services__title">Сервисы</h2>
 			<p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами!
 				<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-				<div class="services-block">
-					<ul class="services-block__list">
-						<li class="services-block__item"><a href="#" class="services-block__link">Доставка</a></li>
-						<li class="services-block__item"><a href="#" class="services-block__link">Гарантия</a></li>
-						<li class="services-block__item"><a href="#" class="services-block__link">Кредит</a></li>
+				<div class="services-menu">
+					<input class="visually-hidden" id="services-1" type="radio" name="services" checked>
+					<input class="visually-hidden" id="services-2" type="radio" name="services">
+					<input class="visually-hidden" id="services-3" type="radio" name="services">
+					<ul class="services-menu__list">
+						<li class="services-menu__item">
+							<label for="services-1" class="services-menu__link services-menu__link--1">Доставка</label>
+						</li>
+						<li class="services-menu__item">
+							<label for="services-2" class="services-menu__link services-menu__link--2">Гарантия</label>
+						</li>
+						<li class="services-menu__item">
+							<label for="services-3" class="services-menu__link services-menu__link--3">Кредит</label>
+						</li>
 					</ul>
-					<div class="services-block__description">
-						<h2 class="services-block__title">Доставка</h2>
-						<p class="services-block__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-						Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-					</div>
+					<ul class="services-menu__list-description">
+						<li class="services-menu__item-description services-menu__item-description--1">
+							<h2 class="services-menu__title-description">Доставка</h2>
+							<p class="services-menu__text-description">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!</p>
+							<p class="services-menu__text-description">Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+						</li>
+						<li class="services-menu__item-description services-menu__item-description--2">
+							<h2 class="services-menu__title-description">Гарантия</h2>
+							<p class="services-menu__text-description">Если купленный у нас товар поломается или заискрит,<br> 
+							а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. </p>
+							<p class="services-menu__text-description">Дом уж восстановите как-нибудь сами.</p>
+						</li>
+						<li class="services-menu__item-description services-menu__item-description--3">
+							<h2 class="services-menu__title-description">Кредит</h2>
+							<p class="services-menu__text-description">Залезть в долговую яму стало проще!</p>
+							<p class="services-menu__text-description">Кредитные консультанты придут вам на помощь.</p>
+							<a href="#" class="button services-menu__button">Отправить заявку</a>
+						</li>
+					</ul>
+					
 				</div>
 			</div>
 		</section>
@@ -347,7 +371,7 @@
 			<div class="container footer__wrap">
 				<div class="footer__info">
 					<h3 class="visually-hidden">Основная информация</h3>
-					<a class="logo" href="#"><img src="./img/logo-technomart.svg" width="136" height="22" alt="Логотип"></a>
+					<a class="logo"><img src="./img/logo-technomart.svg" width="136" height="22" alt="Логотип"></a>
 					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 					<a class="footer__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
 				</div>

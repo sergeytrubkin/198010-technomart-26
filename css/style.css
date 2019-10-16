@@ -84,7 +84,7 @@ ul {
 	background-color: #ee3643;
 
 	border: none;
-	border-radius: 2px;
+	border-radius: 3px;
 }
 
 .button:hover,
@@ -808,6 +808,7 @@ header {
 	height: 70px;
 
 	font-size: 0;
+	vertical-align: top;
 
 	transform: translateY(-50%);
 
@@ -828,6 +829,8 @@ header {
 	display: inline-block;
 	width: 28px;
 	height: 28px;
+
+	vertical-align: top;
 
 	border-left: 3px solid #fff;
 	border-bottom: 3px solid #fff;
@@ -851,7 +854,7 @@ header {
 .slider__controls {
 	position: absolute;
 	left: 295px;
-	bottom: 25px;
+	bottom: 23px;
 }
 
 .slider__controls-points {
@@ -863,6 +866,8 @@ header {
 	background-color: #fff;
 	border: 2px solid #fff;
 	border-radius: 50%;
+
+	vertical-align: top;
 	font-size: 0;
 }
 
@@ -1034,7 +1039,143 @@ header {
 
 /*		services		*/
 .services {
+	padding-top: 68px;
+
 	background-color: #f4f8f9;
+}
+
+.services__title {
+	margin: 0;
+	margin-bottom: 29px;
+
+	font-weight: normal;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.services__text {
+	margin: 0;
+	margin-bottom: 69px;
+	font-size: 13px;
+	font-family: 'PT Sans';
+}
+
+.services-menu {
+	display: flex;
+}
+
+.services-menu__list {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	margin-right: 80px;
+	width: 363px;
+}
+
+.services-menu__list::before {
+	content: "";
+	position: absolute;
+	right: 0;
+	width: 10px;
+	height: 272px;
+	top: -40px;
+
+	background-image: url(../img/services-shadow.png);
+	background-repeat: no-repeat;
+}
+
+.services-menu__item {
+	display: flex;
+	width: 100%;
+
+	color: #fff;
+}
+
+.services-menu__link {
+	width: 100%;
+	padding: 16px 20px 20px 22px;
+	background-color: #32425c;
+
+	font-size: 21px;
+
+	border-bottom: 1px solid #293449;
+	border-top: 1px solid #405069;
+
+	cursor: pointer;
+}
+
+.services-menu__link:hover,
+.services-menu__link:focus {
+	background-color: #293449;
+}
+
+#services-1:checked ~ .services-menu__list .services-menu__link--1,
+#services-2:checked ~ .services-menu__list .services-menu__link--2,
+#services-3:checked ~ .services-menu__list .services-menu__link--3 {
+	background-color: #fff;
+
+	color: #32425c;
+	font-weight: bold;
+
+	border-top-color: #fff;
+	border-bottom-color: #fff;
+
+	cursor: default;
+}
+
+.services-menu__list-description {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.services-menu__item-description {
+	display: flex;
+	flex-direction: column;
+	min-height: 284px;
+	background-image: url(../img/delivery.png);
+	background-repeat: no-repeat;
+	background-position: right 23px;
+
+	display: none;
+}
+
+.services-menu__item-description:nth-child(2) {
+	background-image: url(../img/guarantee.png);
+}
+
+.services-menu__item-description:last-child {
+	background-image: url(../img/credit.png);
+}
+
+.services-menu__title-description {
+	margin: 0;
+	margin-top: 4px;
+	margin-bottom: 31px;
+
+	font-size: 36px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #32425c;
+}
+
+.services-menu__text-description {
+	max-width: 375px;
+	margin: 0;
+
+	font-size: 13px;
+	font-family: 'PT Sans';
+}
+
+.services-menu__button {
+	width: 195px;
+	margin-top: 28px;
+}
+
+#services-1:checked ~ .services-menu__list-description .services-menu__item-description--1,
+#services-2:checked ~ .services-menu__list-description .services-menu__item-description--2,
+#services-3:checked ~ .services-menu__list-description .services-menu__item-description--3 {
+	display: flex;
 }
 /*		end services		*/
 
