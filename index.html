@@ -226,42 +226,42 @@
 		<ul class="produsers__list">
 			<li class="producers__item">
 				<a href="#" class="producers__link">
-					<img src="img/bosch.png" alt="Bosch">
+					<img src="img/bosch.png" width="126" height="37" alt="Bosch">
 				</a>
 			</li>
 			<li class="producers__item">
 				<a href="#" class="producers__link">
-					<img src="img/Makita.png" alt="Makita">
+					<img src="img/Makita.png" width="123" height="40" alt="Makita">
 				</a>
 			</li>
 			<li class="producers__item">
 				<a href="#" class="producers__link">
-					<img src="img/Dewalt.png" alt="Dewalt">
+					<img src="img/Dewalt.png" width="146" height="44" alt="Dewalt">
 				</a>
 			</li>
 			<li class="producers__item">
 				<a href="#" class="producers__link">
-					<img src="img/Interscol.png" alt="Interscol">
+					<img src="img/Interscol.png" width="200" height="32" alt="Interscol">
 				</a>
 			</li>
 			<li class="producers__item">
 				<a href="#" class="producers__link">
-					<img src="img/Hitachi.png" alt="Hitachi">
+					<img src="img/Hitachi.png" width="169" height="31" alt="Hitachi">
 				</a>
 			</li>
 			<li class="producers__item">
 				<a href="#" class="producers__link">
-					<img src="img/lg.png" alt="LG">
+					<img src="img/lg.png" width="121" height="73" alt="LG">
 				</a>
 			</li>
 			<li class="producers__item">
 				<a href="#" class="producers__link">
-					<img src="img/AEG.png" alt="AEG">
+					<img src="img/AEG.png" width="151" height="96" alt="AEG">
 				</a>
 			</li>
 			<li class="producers__item">
 				<a href="#" class="producers__link">
-					<img src="img/Metabo.png" alt="Metabo">
+					<img src="img/Metabo.png" width="202" height="62" alt="Metabo">
 				</a>
 			</li>
 		</ul>
@@ -347,18 +347,6 @@
 					<button class="visually-hidden" type="button">Закрыть</button>
 				</div>
 				<a class="button map__btn" href="#">Заблудились? напишите нам!</a>
-				<form class="visually-hidden" action="http://echo.htmlacademy.ru" method="post">
-					<label for="name">Ваше имя:</label>
-					<input id ="name" type="text" name="name" placeholder="Имя Фамилия">
-
-					<label for="email">Ваш e-mail:</label>
-					<input id ="email" type="email" name="email" placeholder="email@example.com">
-
-					<label for="text">Текст письма:</label>
-					<textarea id="text" name="text"  cols="30" rows="10"></textarea>
-					<button type="submit">Отправить</button>
-					<button type="button">Закрыть</button>
-				</form>
 			</section>
 			<!--  end map -->
 		</div>
@@ -424,7 +412,40 @@
 				</div>
 			</section>
 			<!-- end footer__bottom -->
-
 		</footer>
+
+		<!-- modal -->
+		<section class="modal">
+			<h3 class="visually-hidden">Обрантая связь</h3>
+			<form class="modal-write-us modal__wrap" action="http://echo.htmlacademy.ru" method="post">
+				<div class="modal__main-block">
+					<p>
+						<label for="name">Ваше имя:</label>
+						<input id ="name" type="text" name="name" placeholder="Имя Фамилия">
+					</p>
+					<p>
+						<label for="email">Ваш e-mail:</label>
+						<input id ="email" type="email" name="email" placeholder="email@example.com">
+					</p>
+					<p>
+						<label for="text">Текст письма:</label>
+						<textarea id="text" name="text"  cols="30" rows="10">В свободной форме</textarea>
+					</p>
+				</div>
+				<div class="modal__send-block">
+					<button class="button modal-write-us__button" type="submit">Отправить</button>
+				</div>
+				<button class="modal__exit-btn" type="button">Закрыть</button>
+			</form>
+		</section>
+
+		<section class="modal modal-show">
+			<h3 class="visually-hidden">Карта</h3>
+			<div class=modal__wrap>
+				<iframe class="modal-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1571402491942!5m2!1sru!2sby" width="940" height="446" style="border:0;"></iframe>
+				<button class="modal__exit-btn" type="button">Закрыть</button>
+			</div>
+		</section>
+		<!-- end modal -->
 	</body>
 	</html>

@@ -51,7 +51,7 @@
 					</svg>
 				</a>
 				<a class="user-menu__exit" href="#">Выйти
-					<svg version="1.1" id="Layer_1" fill="#c5c5c5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					<svg version="1.1" fill="#c5c5c5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					width="21px" height="17px" viewBox="0 0 21 17" enable-background="new 0 0 21 17" xml:space="preserve">
 					<g>
 						<polygon points="21,8.5 12.125,0 12.125,6 6.125,6 6.125,11 12.125,11 12.125,17 	"/>
@@ -192,13 +192,13 @@
 					</ul>
 					<div class="catalog-sort__arrow-block">
 						<a href="#" class="catalog-sort__arrow catalog-sort__arrow--active">По возрастанию 
-							<svg version="1.1" id="Layer_1" fill="#c5c5c5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							<svg version="1.1" fill="#c5c5c5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 							width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
 							<polygon points="5.5,0 0,10 11,10 "/>
 						</svg>
 					</a>
 					<a href="#" class="catalog-sort__arrow">По убыванию 
-						<svg version="1.1" id="Layer_1" fill="#c5c5c5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						<svg version="1.1" fill="#c5c5c5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
 						<polyline points="5.5,10 0,0 11,0 "/>
 					</svg>
@@ -416,15 +416,20 @@
 		</section>
 	</footer>
 
-	<!-- popup -->
-	<div class="popup">
-		<div class="popup__added-cart">
-			<p>Товар добавлен в корзину</p>
-			<a href="#">Оформить заказ</a>
-			<a href="#">Продолжить покупки</a>
-			<button type="button">Закрыть</button>
+	<!-- modal -->
+	<section class="modal">
+		<h3 class="visually-hidden">Корзина</h3>
+		<div class="modal__wrap modal-cart">
+			<div class="modal__main-block modal-cart__main-block">
+				<p class="modal-cart__text">Товар добавлен в корзину!</p>
+			</div>
+			<div class="modal__send-block">
+				<a class="button modal-cart__button" href="#">Оформить заказ</a>
+				<a class="button modal-cart__button" href="#">Продолжить покупки</a>
+			</div>
+			<button class="modal__exit-btn" type="button">Закрыть</button>
 		</div>
-	</div>
-	<!-- end popups -->
+	</section>
+	<!-- end modal -->
 </body>
 </html>
