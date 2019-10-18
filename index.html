@@ -343,10 +343,10 @@
 				<h2>Контакты</h2>
 				<p>Вы можете забрать товар сами, заехав в наш офис:</p>
 				<div class="map__block">
-					<a href="https://yandex.ru/maps"><img src="./img/map.jpg" width="300" height="158" alt="карта"></a>
+					<a class="map__link" href="https://yandex.ru/maps"><img src="./img/map.jpg" width="300" height="158" alt="карта"></a>
 					<button class="visually-hidden" type="button">Закрыть</button>
 				</div>
-				<a class="button map__btn" href="#">Заблудились? напишите нам!</a>
+				<a class="button popup-open" href="#">Заблудились? напишите нам!</a>
 			</section>
 			<!--  end map -->
 		</div>
@@ -415,7 +415,7 @@
 		</footer>
 
 		<!-- modal -->
-		<section class="modal">
+		<section class="modal popup-feedback">
 			<h3 class="visually-hidden">Обрантая связь</h3>
 			<form class="modal-write-us modal__wrap" action="http://echo.htmlacademy.ru" method="post">
 				<div class="modal__main-block">
@@ -435,17 +435,18 @@
 				<div class="modal__send-block">
 					<button class="button modal-write-us__button" type="submit">Отправить</button>
 				</div>
-				<button class="modal__exit-btn" type="button">Закрыть</button>
+				<button class="modal__close modal__close--feedback" type="button">Закрыть</button>
 			</form>
 		</section>
 
-		<section class="modal modal-show">
+		<section class="modal popup-map">
 			<h3 class="visually-hidden">Карта</h3>
 			<div class=modal__wrap>
 				<iframe class="modal-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1571402491942!5m2!1sru!2sby" width="940" height="446" style="border:0;"></iframe>
-				<button class="modal__exit-btn" type="button">Закрыть</button>
+				<button class="modal__close" type="button">Закрыть</button>
 			</div>
 		</section>
 		<!-- end modal -->
+		<script src="js/script.js"></script>
 	</body>
 	</html>
