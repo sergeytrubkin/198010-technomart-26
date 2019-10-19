@@ -33,6 +33,24 @@ cuprum-regular - latin_cyrillic */ @font-face {
     url("../fonts/pt-sans-v11-latin_cyrillic-regular.woff2") format("woff2");
 }
 
+@keyframes move {
+  from {
+    transform: translateY(-1000px);
+  }
+
+  75% {
+    transform: translateY(20px);
+  }
+
+  85% {
+    transform: translateY(-20px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
 html {
   box-sizing: border-box;
 }
@@ -2231,6 +2249,10 @@ header {
 
   background-color: #fff;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+
+  animation-name: move;
+  animation-duration: 0.6s;
+  animation-timing-function: easy-in-out;
 }
 
 .modal-write-us {
@@ -2238,6 +2260,8 @@ header {
   width: 620px;
   margin: auto;
   padding-top: 7px;
+
+  z-index: 3;
 }
 
 .modal__main-block {

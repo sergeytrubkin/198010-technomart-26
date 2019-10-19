@@ -19,15 +19,19 @@ mapClose.addEventListener("click", function(evt) {
 });
 
 // poup-open (модальное окно обратной связи)
-var feedbackOpen = document.querySelector(".popup-open");
 var feedbackPopup = document.querySelector(".popup-feedback");
+
+var feedbackLink = document.querySelector(".popup-open");
 var feedbackClose = document.querySelector(".modal__close--feedback");
 
-console.log(feedbackOpen);
+var feedbackName = document.querySelector("[name=name");
+var feedbackMail = document.querySelector("[name=mail]");
+var feedbackForm = document.querySelector(".modal-write-us");
 
-feedbackOpen.addEventListener("click", function(evt) {
+feedbackLink.addEventListener("click", function(evt) {
   evt.preventDefault();
   feedbackPopup.classList.add("modal-show");
+  feedbackName.focus();
 });
 
 feedbackClose.addEventListener("click", function(evt) {
@@ -39,4 +43,12 @@ feedbackClose.addEventListener("click", function(evt) {
 // feedbackPopup.addEventListener("click", function(evt) {
 //   evt.preventDefault();
 //   feedbackPopup.classList.remove("modal-show");
+// });
+
+// проверка формы на заполнение полей
+// feedbackForm.addEventListener("submit", function(evt) {
+//   if (!feedbackMail.value || !feedbackName.value) {
+//     evt.preventDefault();
+//     console.log("нужно заполнить все поля формы");
+//   }
 // });
