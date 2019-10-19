@@ -1,4 +1,5 @@
-cuprum-regular - latin_cyrillic */ @font-face {
+/*cuprum-regular - latin_cyrillic */
+@font-face {
   font-family: "Cuprum";
   font-style: normal;
   font-weight: 400;
@@ -6,6 +7,7 @@ cuprum-regular - latin_cyrillic */ @font-face {
   src: local("Cuprum Regular"), local("Cuprum-Regular"),
     url("../fonts/cuprum-v11-latin_cyrillic-regular.woff2") format("woff2");
 }
+
 /* cuprum-700 - latin_cyrillic */
 @font-face {
   font-family: "Cuprum";
