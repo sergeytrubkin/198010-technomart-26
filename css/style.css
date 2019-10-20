@@ -336,16 +336,16 @@ header {
   opacity: 0.5;
 }
 
-.header-top__item--cart {
+.header-top__item--active {
   background-color: #ee3643;
 }
 
-.header-top__item--cart a:hover,
-.header-top__item--cart a:focus {
+.header-top__item--active a:hover,
+.header-top__item--active a:focus {
   background-color: #fe3c49;
 }
 
-.header-top__item--cart a:active {
+.header-top__item--active a:active {
   background-color: #e61b29;
 }
 
