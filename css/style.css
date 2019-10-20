@@ -615,7 +615,6 @@ header {
 .navigation__item {
   display: flex;
   flex-grow: 1;
-  min-width: 134px;
   text-align: center;
 }
 
@@ -624,6 +623,8 @@ header {
   width: 100%;
   padding-top: 17px;
   padding-bottom: 19px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: #32425c;
   color: #fff;
   flex-grow: 1;
@@ -641,11 +642,11 @@ header {
 }
 
 .navigation__item:first-child a {
-  padding-left: 22px;
+  padding-left: 35px;
 }
 
 .navigation__item:last-child a {
-  padding-right: 25px;
+  padding-right: 38px;
 }
 
 .navigation__link:hover,
@@ -1678,6 +1679,7 @@ header {
 }
 
 .catalog-sort .catalog-sort__title {
+	margin-top: 0;
   margin-bottom: 0;
   font-size: 13px;
 }
