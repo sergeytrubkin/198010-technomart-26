@@ -2332,6 +2332,18 @@ header {
   resize: none;
 }
 
+.modal__main-block input:hover,
+.modal__main-block textarea:hover {
+	border-color: #b5b5b5;
+}
+
+.modal__main-block input:focus,
+.modal__main-block textarea:focus {
+	border-color: #ee3643;
+
+	outline: none;
+}
+
 .modal__send-block {
   display: flex;
   justify-content: center;
