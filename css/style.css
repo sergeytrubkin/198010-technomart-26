@@ -1070,6 +1070,7 @@ header {
 }
 
 .slider__item {
+	position: relative;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
@@ -1114,9 +1115,10 @@ header {
 }
 
 .slider__button {
+	position: absolute;
+	bottom: 21px;
 	width: 196px;
 	padding-left: 15px;
-	margin-top: auto;
 
 	z-index: 1;
 }
