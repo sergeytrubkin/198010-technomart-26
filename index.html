@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Техномарт</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700%7CPT+Sans&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
@@ -446,7 +446,22 @@
 				<button class="modal__close" type="button">Закрыть</button>
 			</div>
 		</section>
+
+		<section class="modal popup-cart">
+			<h3 class="visually-hidden">Корзина</h3>
+			<div class="modal__wrap modal-cart">
+				<div class="modal__main-block modal-cart__main-block">
+					<p class="modal-cart__text">Товар добавлен в корзину!</p>
+				</div>
+				<div class="modal__send-block">
+					<a class="button modal-cart__button" href="#">Оформить заказ</a>
+					<a class="button modal-cart__button" href="#">Продолжить покупки</a>
+				</div>
+				<button class="modal__close" type="button">Закрыть</button>
+			</div>
+		</section>
 		<!-- end modal -->
-		<script src="js/script.js"></script>
+		<script src="js/script.min.js"></script>
+		<script src="js/popup-cart.min.js"></script>
 	</body>
 	</html>
