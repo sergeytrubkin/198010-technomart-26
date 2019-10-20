@@ -84,10 +84,6 @@ a {
   text-decoration: none;
 }
 
-ul {
-  list-style: none;
-}
-
 .button {
   display: inline-block;
   padding: 0 10px;
@@ -273,6 +269,8 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  list-style: none;
 }
 
 .header-top__item {
@@ -561,6 +559,8 @@ header {
   margin: 0;
   margin-right: auto;
   padding-left: 19px;
+
+  list-style: none;
 }
 
 .user-menu__item {
@@ -610,6 +610,8 @@ header {
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
+
+  list-style: none;
 }
 
 .navigation__item {
@@ -677,6 +679,8 @@ header {
   align-items: stretch;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .promo__item {
@@ -741,6 +745,8 @@ header {
   height: 100%;
   padding: 0;
   margin: 0;
+
+  list-style: none;
 }
 
 .promo__inner-list .promo__item {
@@ -901,6 +907,8 @@ header {
 .slider__list {
   width: 100%;
   padding: 0;
+
+  list-style: none;
 }
 
 .slider__item {
@@ -977,6 +985,8 @@ header {
 .products ul {
   width: 100%;
   margin-bottom: 0;
+
+  list-style: none;
 }
 
 .products__list > .catalog-items__item:nth-child(3n) {
@@ -1020,6 +1030,8 @@ header {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .producers__item {
@@ -1093,6 +1105,8 @@ header {
   padding: 0;
   margin-right: 80px;
   width: 363px;
+
+  list-style: none;
 }
 
 .services-menu__list::before {
@@ -1195,15 +1209,9 @@ header {
   margin-top: 28px;
 }
 
-#services-1:checked
-  ~ .services-menu__list-description
-  .services-menu__item-description--1,
-#services-2:checked
-  ~ .services-menu__list-description
-  .services-menu__item-description--2,
-#services-3:checked
-  ~ .services-menu__list-description
-  .services-menu__item-description--3 {
+#services-1:checked ~ .services-menu__list-description .services-menu__item-description--1,
+#services-2:checked ~ .services-menu__list-description .services-menu__item-description--2,
+#services-3:checked ~ .services-menu__list-description .services-menu__item-description--3 {
   display: flex;
 }
 /*		end services		*/
@@ -1241,6 +1249,8 @@ header {
   margin: 0;
   padding: 0;
   margin-bottom: 36px;
+
+  list-style: none;
 }
 
 .features__item {
@@ -1263,6 +1273,8 @@ header {
 
 .features__inner-list {
   margin-bottom: 0;
+
+  list-style: none;
 }
 
 .features__inner-item {
@@ -1332,6 +1344,8 @@ header {
   display: flex;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .bread-crumbs li {
@@ -1692,6 +1706,8 @@ header {
   padding: 0;
   padding-right: 14px;
   margin-left: auto;
+
+  list-style: none;
 }
 
 .catalog-sort__item:first-child {
@@ -1755,6 +1771,8 @@ header {
   padding: 0;
   margin: 0;
   margin-bottom: 32px;
+
+  list-style: none;
 
   font-family: "PT Sans", Arial, sans-serif;
 }
@@ -1953,6 +1971,8 @@ header {
   display: flex;
   padding: 0;
   margin: 0;
+
+  list-style: none;
 }
 
 .pagination__item {
@@ -2076,6 +2096,8 @@ header {
   margin: 0;
   padding: 0;
   margin-top: 38px;
+
+  list-style: none;
 }
 
 .footer__list li {
