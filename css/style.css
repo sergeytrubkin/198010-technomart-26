@@ -241,7 +241,7 @@ header {
 }
 
 .header-top__form input::placeholder {
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;
   color: #fff;
 }
 
@@ -615,6 +615,7 @@ header {
 .navigation__item {
   display: flex;
   flex-grow: 1;
+  min-width: 134px;
   text-align: center;
 }
 
@@ -1078,7 +1079,7 @@ header {
   margin: 0;
   margin-bottom: 69px;
   font-size: 13px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .services-menu {
@@ -1185,7 +1186,7 @@ header {
   margin: 0;
 
   font-size: 13px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .services-menu__button {
@@ -1225,7 +1226,7 @@ header {
 .info-block p {
   margin: 0;
   font-size: 13px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .features {
@@ -1372,7 +1373,7 @@ header {
 
 .bread-crumbs a {
   color: #000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   text-transform: uppercase;
 }
@@ -1402,7 +1403,7 @@ header {
 .catalog-filter {
   width: 220px;
   margin-right: 20px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .catalog-filter__title {
@@ -1670,7 +1671,7 @@ header {
   padding-right: 17px;
   margin-bottom: 20px;
 
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
 
   background-color: #f7f3ec;
@@ -1753,7 +1754,7 @@ header {
   margin: 0;
   margin-bottom: 32px;
 
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .catalog-items__item {
@@ -1866,7 +1867,7 @@ header {
   text-align: center;
 
   text-transform: uppercase;
-  font-family: "Cuprum";
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
 
@@ -1968,7 +1969,7 @@ header {
 
   color: #000;
   font-size: 13px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -2018,7 +2019,7 @@ header {
   font-size: 13px;
   line-height: 24px;
   font-weight: 500;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
 }
 /*		end description-item		*/
 /*		end main		*/
@@ -2311,7 +2312,7 @@ header {
 .modal__main-block textarea {
   padding: 10px 13px;
 
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
