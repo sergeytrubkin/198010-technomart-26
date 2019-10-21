@@ -79,6 +79,58 @@
 	}
 }
 
+@-webkit-keyframes shake {
+	from {
+		-webkit-transform: translateX(0);
+		        transform: translateX(0);
+	}
+
+	15%,
+	45%,
+	75% {
+		-webkit-transform: translateX(-7px);
+		        transform: translateX(-7px);
+	}
+
+	30%,
+	60%,
+	90% {
+		-webkit-transform: translateX(7px);
+		        transform: translateX(7px);
+	}
+
+	to {
+		-webkit-transform: translateX(0);
+		        transform: translateX(0);
+	}
+}
+
+@keyframes shake {
+	from {
+		-webkit-transform: translateX(0);
+		        transform: translateX(0);
+	}
+
+	15%,
+	45%,
+	75% {
+		-webkit-transform: translateX(-7px);
+		        transform: translateX(-7px);
+	}
+
+	30%,
+	60%,
+	90% {
+		-webkit-transform: translateX(7px);
+		        transform: translateX(7px);
+	}
+
+	to {
+		-webkit-transform: translateX(0);
+		        transform: translateX(0);
+	}
+}
+
 html {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -254,7 +306,7 @@ header {
 	padding-top: 11px;
 	padding-bottom: 12px;
 
-	background-color: inherit;
+	background-color: #293449;
 
 	border: none;
 	font-size: 17px;
@@ -973,6 +1025,8 @@ header {
 	height: 100%;
 	left: 0;
 	top: 0;
+
+	z-index: 1;
 }
 
 .slider__switch {
@@ -993,7 +1047,8 @@ header {
 	-ms-transform: translateY(-50%);
 
 	transform: translateY(-50%);
-
+	
+	cursor: pointer;
 	outline: none;
 }
 
@@ -1056,6 +1111,8 @@ header {
 
 	vertical-align: top;
 	font-size: 0;
+
+	cursor: pointer;
 }
 
 .slider__controls-points--active {
@@ -1800,6 +1857,10 @@ header {
 	padding-left: 10px;
 }
 
+.catalog-filter__price-controls label:last-child {
+	margin-left: auto;
+}
+
 .catalog-filter__price-controls input {
 	width: 100%;
 	padding: 0 5px;
@@ -1808,7 +1869,7 @@ header {
 	text-align: center;
 	font-size: 17px;
 
-	background-color: inherit;
+	background-color: #f7f3ec;
 	border-radius: 3px;
 	border: none;
 
@@ -2086,10 +2147,10 @@ header {
 	-webkit-box-flex: 1;
 	-ms-flex-positive: 1;
 	flex-grow: 1;
-	padding: 0 15px;
 }
 
 .catalog-items__item p {
+	width: 80%;
 	margin: 0;
 	margin-bottom: 8px;
 
@@ -2480,7 +2541,7 @@ header {
 	align-items: center;
 	-webkit-box-pack: end;
 	-ms-flex-pack: end;
-	justify-content: flex-end;
+	justify-content: flex-start;
 }
 
 .footer__bottom p {
@@ -2835,6 +2896,15 @@ header {
 
 .modal-cart__button:active:last-child {
 	background-color: #c5c5c5;
+}
+
+.modal--error {
+	-webkit-animation-name: shake;
+	        animation-name: shake;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+	-webkit-animation-duration: 0.5s;
+	        animation-duration: 0.5s;
 }
 /*		end modal-cart		*/
 /*		end modal		*/
