@@ -107,9 +107,11 @@
 		<!-- bread-crumbs -->
 		<div class="bread-crumbs">
 			<ul>
-				<li><a href="index.html">
-					<span class="visually-hidden">Главная</span>
-				</a></li>
+				<li>
+					<a href="index.html">
+						<span class="visually-hidden">Главная</span>
+					</a>
+				</li>
 				<li><a href="#">Каталог</a></li>
 				<li><a href="#">Инструмент</a></li>
 				<li><a>Перфораторы</a></li>
@@ -133,8 +135,12 @@
 						<div class="catalog-filter__range-controls">
 							<div class="scale">
 								<div class="bar"></div>
-								<div class="catalog-filter__range-toggle catalog-filter__range-toggle--min"></div>
-								<div class="catalog-filter__range-toggle catalog-filter__range-toggle--max"></div>
+								<div class="catalog-filter__range-toggle catalog-filter__range-toggle--min">
+									Миниальная цена
+								</div>
+								<div class="catalog-filter__range-toggle catalog-filter__range-toggle--max">
+									Максимальная цена
+								</div>
 							</div>
 						</div>
 						<div class="catalog-filter__price-controls">
@@ -337,14 +343,26 @@
 		</ul>
 		<div class="pagination">
 			<ul class="pagination__list">
-				<li class="pagination__item"><a href="#" class="pagination__link pagination__link--active"><span>1</span></a></li>
-				<li class="pagination__item"><a href="#" class="pagination__link"><span>2</span></a></li>
-				<li class="pagination__item"><a href="#" class="pagination__link"><span>3</span></a></li>
-				<li class="pagination__item"><a href="#" class="pagination__link"><span>Следующая</span></a></li>
-			</ul>
-		</div>
-	</div>
-	<!--		end catalog items		-->
+				<li class="pagination__item"><a href="#" class="pagination__link pagination__link--active">
+					<span class="visually-hidden">Страница</span><span>1</span>
+				</a>
+			</li>
+				<li class="pagination__item"><a href="#" class="pagination__link">
+					<span class="visually-hidden">Страница</span><span>2</span>
+				</a>
+			</li>
+			<li class="pagination__item"><a href="#" class="pagination__link">
+				<span class="visually-hidden">Страница</span><span>3</span>
+			</a>
+		</li>
+		<li class="pagination__item"><a href="#" class="pagination__link">
+			<span>Следующая</span><span class="visually-hidden">Страница</span>
+		</a>
+	</li>
+</ul>
+</div>
+</div>
+<!--		end catalog items		-->
 </div>
 <!--		end catalog		-->
 </div>
@@ -399,7 +417,7 @@
 				<br>Все права защищены</p>
 				<div class="social-block">
 					<a href="#">
-						<span class="visually-hidden">VK</span>
+						<span class="visually-hidden">Вконтакте</span>
 					</a>
 					<a href="#">
 						<span class="visually-hidden">facebook</span>
